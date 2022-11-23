@@ -26,11 +26,16 @@ export default{
             // this.$store.dispatch({
             //     type:'newTitle',title:"zaeem's new title"
             // })
+            //---------------
+            // this.$store.dispatch({
+            //     type:'newTitle',title:"zaeem's new title"
+            // }).then((response=>{
+            //     console.log("called",response)
+            // }))
+            //---------------
             this.$store.dispatch({
-                type:'newTitle',title:"zaeem's new title"
-            }).then((response=>{
-                console.log("called",response)
-            }))
+                type:'newTitle2',title:"zaeem's new title 2"
+            })
         }
 
     }

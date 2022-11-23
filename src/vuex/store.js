@@ -27,6 +27,13 @@ export default createStore({
             },2000)
            }))
             
+        },
+        newTitle2(context){
+            context.dispatch({
+                    type:'newTitle',title:'title action 2 data'
+            }).then((response=>{
+                console.log("====",response)
+            }))
         }
     }
 })
