@@ -23,9 +23,14 @@ export default{
             //this.$store.commit('setMainTitle',{title:"new again data"})
             //this.$store.state.mainTitle="this is my new state"
             // calling Action here
+            // this.$store.dispatch({
+            //     type:'newTitle',title:"zaeem's new title"
+            // })
             this.$store.dispatch({
                 type:'newTitle',title:"zaeem's new title"
-            })
+            }).then((response=>{
+                console.log("called",response)
+            }))
         }
 
     }

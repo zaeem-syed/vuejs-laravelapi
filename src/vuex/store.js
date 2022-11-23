@@ -13,8 +13,20 @@ export default createStore({
      
     },
     actions:{
+        // newTitle(context,payload){
+        //     setTimeout(()=>{
+        //         context.commit('setMainTitle',payload)
+        //     },2000)
+            
+        // }
         newTitle(context,payload){
+           return new Promise((resolve=>{
+            setTimeout(()=>{
             context.commit('setMainTitle',payload)
+            resolve('ok reponse has been generated')
+            },2000)
+           }))
+            
         }
     }
 })
