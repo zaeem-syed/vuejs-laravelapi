@@ -26,27 +26,27 @@ export default{
         }
     },
     methods:{
-        newTitle(){
-            //this.$store.commit('setMainTitle','this is new title')
-            // this.$store.commit({
-            //     type:'setMainTitle',title:'this is new title by type'})
-            //this.$store.commit('setMainTitle',{title:"new again data"})
-            //this.$store.state.mainTitle="this is my new state"
-            // calling Action here
-            // this.$store.dispatch({
-            //     type:'newTitle',title:"zaeem's new title"
-            // })
-            //---------------
-            // this.$store.dispatch({
-            //     type:'newTitle',title:"zaeem's new title"
-            // }).then((response=>{
-            //     console.log("called",response)
-            // }))
-            //---------------
-            this.$store.dispatch({
-                type:'newTitle2',title:"zaeem's new title 2"
-            })
-        }
+        // newTitle(){
+        //     //this.$store.commit('setMainTitle','this is new title')
+        //     // this.$store.commit({
+        //     //     type:'setMainTitle',title:'this is new title by type'})
+        //     //this.$store.commit('setMainTitle',{title:"new again data"})
+        //     //this.$store.state.mainTitle="this is my new state"
+        //     // calling Action here
+        //     // this.$store.dispatch({
+        //     //     type:'newTitle',title:"zaeem's new title"
+        //     // })
+        //     //---------------
+        //     // this.$store.dispatch({
+        //     //     type:'newTitle',title:"zaeem's new title"
+        //     // }).then((response=>{
+        //     //     console.log("called",response)
+        //     // }))
+        //     //---------------
+        //     this.$store.dispatch({
+        //         type:'newTitle2',title:"zaeem's new title 2"
+        //     })
+        // }
 
     },
 

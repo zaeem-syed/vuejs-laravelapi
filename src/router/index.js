@@ -7,6 +7,7 @@ import HomePage from '../views/HomePage.vue'
 import EditPage from '../views/EditPage.vue'
 import First from '../vuex/First.vue'
 import Mapstate from '../views/Mapstate.vue'
+import Child from '../vuex/Child.vue'
 
 
 
@@ -15,6 +16,11 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/child',
+    name: 'Child',
+    component: Child
   },
   {
     path: '/about',
