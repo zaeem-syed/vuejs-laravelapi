@@ -3,6 +3,8 @@
         <h3>view</h3>
             <p>{{$store.state.name}}</p>
             <p>{{$store.state.mainTitle}}</p>
+            <p>this is private key=={{privatekey}}</p>
+            <p>this is secret key=={{secretKey}}</p>
             <button @click="newTitle">Change Title</button>
         <Child/>
     </div>
@@ -14,6 +16,14 @@ export default{
     name:'First',   
     components:{
         Child
+    },
+    computed:{
+        privatekey(){
+            return this.$store.getters.hashaddnew;
+        },
+        secretKey(){
+            return this.$store.getters.newSecret('this is new secret key');
+        }
     },
     methods:{
         newTitle(){
@@ -38,7 +48,8 @@ export default{
             })
         }
 
-    }
+    },
+
 
 
 

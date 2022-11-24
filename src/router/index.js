@@ -6,6 +6,7 @@ import Register from '../views/Register.vue'
 import HomePage from '../views/HomePage.vue'
 import EditPage from '../views/EditPage.vue'
 import First from '../vuex/First.vue'
+import Mapstate from '../views/Mapstate.vue'
 
 
 
@@ -48,7 +49,13 @@ const routes = [
     path: '/first',
     name: 'First',
     component: First
+  },
+  {
+    path:'/mapstate',
+    name:'Mapstate',
+    component:Mapstate
   }
+
 
 
 ]

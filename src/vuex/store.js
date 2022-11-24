@@ -3,6 +3,8 @@ export default createStore({
     state:{
         name :"this is vue app",
         mainTitle:'****No Title*****',
+        secretkey:'12345',
+        utr:'6789'
     },
     mutations:{
      setMainTitle(state,payload){
@@ -35,5 +37,18 @@ export default createStore({
                 console.log("====",response)
             }))
         }
+    },
+    getters:{
+        hashadd(state){
+            return state.secretkey+'###calling from hashaddnew'
+        },
+        hashaddnew(state,getters){
+            return state.secretkey+'##'+getters.hashadd;
+        },
+        newSecret:(state)=>(data)=>{
+            return data+'$$'+state.secretkey
+        }
+
+        
     }
 })
