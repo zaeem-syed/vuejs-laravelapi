@@ -8,6 +8,8 @@ import EditPage from '../views/EditPage.vue'
 import First from '../vuex/First.vue'
 import Mapstate from '../views/Mapstate.vue'
 import Child from '../vuex/Child.vue'
+import Fakeapi from '../views/Fakeapi.vue'
+
 
 
 
@@ -16,6 +18,11 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/faker',
+    name: 'Fakeapi',
+    component: Fakeapi
   },
   {
     path: '/child',
